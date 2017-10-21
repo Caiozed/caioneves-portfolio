@@ -1,0 +1,102 @@
+<!--===================================================================================================================================================-->
+<!--                                                                PAGE HEADER                                                                        -->
+<!--===================================================================================================================================================-->
+<header class="header-center title">
+    <h1>Caio Neves</h1>
+    <p>Welcome to my world of coding!</p>
+</header>
+
+<section class="content">
+
+    <header class="header-center">
+        <h2 class="content-title">ABOUT ME</h2>
+        <%= icon "arrow-down", class: "content-title"%>
+        <%= icon "arrow-down", class: "content-title"%>
+        <%= icon "arrow-down", class: "content-title"%>
+    </header>
+    
+<!--===================================================================================================================================================-->
+<!--                                                            MY INFROMATION                                                                          -->
+<!--===================================================================================================================================================-->
+    <article class="info">
+        <h3 class="header-text-color">Hi!, my name is Caio Neves Seabra Leite and i <%= icon('heart')%> coding.</h3>
+        <p class="text-align-left">
+            I have a degree on Computer Science from the Unversity Estácio de Sá,
+            i am a full stack web developer and indie game dev, having made some games and web apps.
+            I am very driven when it comes to learn new things and 
+            what makes me happy is overcoming a new challenge and learning new tecnologies.
+            If you want to get to know me scroll down and see some of my work.
+        </p>
+        
+        <h3 class="header-text-color">Stuff that i know(Web Development)</h3>
+        
+        <img class="tech-icon" src="<%= image_url('git-icon.svg')%>" title="Git">
+        <img class="tech-icon" src="<%= image_url('javascript-icon.svg')%>" title="JavaScript">
+        <img class="tech-icon" src="<%= image_url('rails-icon.svg')%>" title="Ruby On Rails">
+        <img class="tech-icon" src="<%= image_url('database-icon.svg')%>" title="SQL">
+        <img class="tech-icon" src="<%= image_url('nodejs-icon.png')%>" title="NODEJS">
+        <img class="tech-icon" src="<%= image_url('backbone-icon.svg')%>" title="Backbone">
+        <img class="tech-icon" src="<%= image_url('require-js-icon.svg')%>" title="RequireJs">
+        <p class="text-align-left">
+            I'm used to working with web development frameworks like <span class="header-text-color">Ruby On Rails</span> and front end frameworks such as 
+            <span class="header-text-color">Backbone</span>, 
+            i also have experience creating single page applications using 
+            <span class="header-text-color">Nodejs</span>,<span class="header-text-color"> RequireJs</span> 
+            and <span class="header-text-color">Backbone</span>.
+            All of my projects use the industry tools for Version control(<span class="header-text-color">Git, Heroku</span>).
+        </p>
+        
+        
+        <h3 class="header-text-color">Stuff that i know(Game Development)</h3>
+        <img class="tech-icon" src="<%= image_url('unity-icon.svg')%>" title="Unity3D">
+        <img class="tech-icon" src="<%= image_url('unreal-icon.png')%>" title="Unreal">
+        <img class="tech-icon" src="<%= image_url('blender-icon.png')%>" title="Blender">
+         <p class="text-align-left">
+            I'm used to working with game engines like <span class="header-text-color">Unity3D</span> and at a begginer level
+            <span class="header-text-color">Unreal</span>. I have experience in programming for games
+            having made some for desktop and mobile that you can check it out below. I also delve a little on 3D modeling with 
+            <span class="header-text-color">Blender</span> want to check my work go to my 
+            <a href="https://sketchfab.com/caiozed" class="header-text-color" target="_blank">SkechtFab</a> page, word of warning 
+            the models are real begginner stuff 0__0. 
+        </p>
+        
+        
+        <h3 class="header-text-color">Stuff i like to do</h3>
+        <p class="text-align-left">
+            On my spare time you will problably find me playing video games most likely DotA 2 or creating web apps or creating new games
+            or creating a 3D Model, yeah a do a lot of stuff :). 
+        </p>
+    </article>
+<!--===================================================================================================================================================-->
+<!--                                                                MY WORKING EXPERIENCES                                                             -->
+<!--===================================================================================================================================================-->
+    <section>
+        <header class="header-center">
+            <h2 class="content-title">MY WORKING EXPERIENCES</h2>
+            <%= icon "arrow-down", class: "content-title"%>
+            <%= icon "arrow-down", class: "content-title"%>
+            <%= icon "arrow-down", class: "content-title"%>
+        </header>
+    </section>
+<!--===================================================================================================================================================-->
+<!--                                                                MY PROJECTS                                                                        -->
+<!--===================================================================================================================================================-->    
+    <section>
+        <header class="header-center">
+            <h2 class="content-title">MY PROJECTS
+            <%= link_to "ADD", new_project_path, class:"btn btn-danger"%>
+            </h2>
+            <%= icon "arrow-down", class: "content-title"%>
+            <%= icon "arrow-down", class: "content-title"%>
+            <%= icon "arrow-down", class: "content-title"%>
+        </header>
+        <article class="project-list">
+            <%= render @projects %>
+        </article>
+        
+    </section>
+    
+    <footer class="footer">
+        <%= link_to image_tag(image_url('github-icon.svg')), "https://github.com/Caiozed", target: "_blank", title: "My GitHub" %>
+    </footer>
+</section>

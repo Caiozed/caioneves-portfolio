@@ -1,0 +1,93 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+*{
+    color: white;
+    text-align: center;
+}
+
+.header-center{
+    margin: 0 auto;
+}
+
+.text-align-left{
+    text-align: left;
+}
+
+.title{
+    width: 100%;
+    height: 250px;
+    background: rgba(0,56,153,1);
+    background: -moz-linear-gradient(top, rgba(0,56,153,1) 0%, rgba(0,16,28,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,56,153,1)), color-stop(100%, rgba(0,16,28,1)));
+    background: -webkit-linear-gradient(top, rgba(0,56,153,1) 0%, rgba(0,16,28,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,56,153,1) 0%, rgba(0,16,28,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,56,153,1) 0%, rgba(0,16,28,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,56,153,1) 0%, rgba(0,16,28,1) 100%);
+    color: white;
+    h1{
+        font-size: 40px;  
+        padding-top: 20px;   
+        text-shadow: 2px 0 2px black;
+    }
+    p{
+        font-size: 30px;
+        font-style: italic;
+        padding-top: 20px;
+        text-shadow: 2px 0 2px black;
+    }
+}
+
+.content{
+    *{
+        padding: 10px 0;
+    }
+    h3{
+        font-size: 25px;
+        font-weight: 900;
+    }
+    p{
+        font-size: 20px;
+        line-height: 25px;   
+    }
+    
+}
+
+.info{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header-text-color{
+    color: #ff704d;
+}
+.content-title{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.tech-icon{
+     width: 50px;
+     display: inline;
+}
+
+.project-list{
+    border-top: 5px solid rgba(120, 120, 120, 0.4);
+    border-radius: 10px;
+    width: 98%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer{
+    background: #001121;
+    a{
+        padding: 0;
+    }
+    img{
+        padding: 2px;
+        width: 70px;
+    }
+}
+

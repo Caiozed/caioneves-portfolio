@@ -1,0 +1,18 @@
+<%= form_for @project do |f|%>
+    <%= f.label :project_name%>
+    <%= f.text_field :name %>
+    
+    <%= f.label :git_url %>
+    <%= f.text_field :git_url %>
+    
+    <%= f.label :live_demo_url %>
+    <%= f.text_field :demo_url %>
+    
+    <%= f.label :description %>
+    <%= f.text_area :description%>
+    
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+    
+    <%= f.submit class:"btn btn-primary" %>
+<% end %>

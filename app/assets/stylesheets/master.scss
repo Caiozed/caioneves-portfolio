@@ -1,0 +1,27 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "bootstrap";
+
+body{
+    background: #00061a;
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+}
+
+form[class*="new"]{
+    *{
+        color: black;
+        display: block;
+    }
+    
+    label{
+        font-size: 25px;
+        padding: 10px 0;
+        font-weight: 900;
+        text-align: left;
+        color: white;
+    }
+}
