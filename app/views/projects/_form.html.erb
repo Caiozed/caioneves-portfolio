@@ -9,10 +9,12 @@
     <%= f.text_field :demo_url %>
     
     <%= f.label :description %>
-    <%= f.text_area :description%>
+    <%= f.text_area :description %>
     
-    <%= f.label :image %>
-    <%= f.file_field :image %>
+    <div class="inputlabel">
+        <%= f.label :Upload_the_project_image %>
+        <%= f.file_field :image %>
+    </div>    </div>
     
     <%= f.submit class:"btn btn-primary" %>
 <% end %>

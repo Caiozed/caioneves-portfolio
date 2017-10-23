@@ -2,11 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-*{
-    color: white;
-    text-align: center;
-}
-
 .header-center{
     margin: 0 auto;
 }
@@ -74,14 +69,41 @@
 
 .project-list{
     border-top: 5px solid rgba(120, 120, 120, 0.4);
+    border-bottom: 5px solid rgba(120, 120, 120, 0.4);
     border-radius: 10px;
     width: 98%;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
+    position: relative;
+}
+
+.project{
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    p{
+        text-align: left;
+    }
+    .image-link{
+        padding: 0;
+        img{
+            padding: 0;
+            width: 300px;
+            transition: all 1s;
+            &:hover{
+            -webkit-filter: grayscale(100%);
+               -moz-filter: grayscale(100%);
+                 -o-filter: grayscale(100%);
+                -ms-filter: grayscale(100%);
+                    filter: grayscale(100%); 
+            }
+        }
+    }
 }
 
 .footer{
     background: #001121;
+    padding: 10px;
     a{
         padding: 0;
     }
@@ -90,4 +112,5 @@
         width: 70px;
     }
 }
+
 

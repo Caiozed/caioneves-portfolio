@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).on("turbolinks:load", function(){
+   $("input[type='file']").on("change", function(){
+       $(".inputlabel > label").text($(this).val().split("\\").pop()); 
+   }); 
+});

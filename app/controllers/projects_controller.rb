@@ -11,6 +11,8 @@ class ProjectsController < ApplicationController
     @project = Project.new(project_params)
     if @project.save
       redirect_to root_path
+    else
+      render :new
     end
   end
 
@@ -18,6 +20,8 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     if @project.update(project_params)
       redirect_to root_path
+    else
+      render :edit 
     end
   end
 
