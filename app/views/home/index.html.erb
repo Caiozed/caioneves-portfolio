@@ -1,25 +1,27 @@
 <!--===================================================================================================================================================-->
 <!--                                                                PAGE HEADER                                                                        -->
 <!--===================================================================================================================================================-->
-<header class="header-center title">
+<header class="header-center title home">
     <h1>Caio Neves</h1>
     <p>Welcome to my world of coding!</p>
 </header>
 
+<%= render "sidebar" %>
+
 <section class="content">
 
+<!--===================================================================================================================================================-->
+<!--                                                            MY INFROMATION                                                                         -->
+<!--===================================================================================================================================================-->
     <header class="header-center">
-        <h2 class="content-title">ABOUT ME</h2>
+        <h2 class="content-title about">ABOUT ME</h2>
         <%= icon "arrow-down", class: "content-title"%>
         <%= icon "arrow-down", class: "content-title"%>
         <%= icon "arrow-down", class: "content-title"%>
     </header>
     
-<!--===================================================================================================================================================-->
-<!--                                                            MY INFROMATION                                                                          -->
-<!--===================================================================================================================================================-->
     <article class="info">
-        <h3 class="header-text-color">Hi!, my name is Caio Neves Seabra Leite and i <%= icon('heart')%> coding.</h3>
+        <h3 class="header-text-color">Hi!, my name is Caio Neves Seabra Leite and i <%= icon('heart', id: "heart")%> coding.</h3>
         <p class="text-align-left">
             I have a degree on Computer Science from the Unversity Estácio de Sá,
             i am a full stack web developer and indie game dev, having made some games and web apps.
@@ -72,7 +74,7 @@
 <!--===================================================================================================================================================-->
     <section>
         <header class="header-center">
-            <h2 class="content-title">MY WORKING EXPERIENCES</h2>
+            <h2 class="content-title work">MY WORKING EXPERIENCES</h2>
             <%= icon "arrow-down", class: "content-title"%>
             <%= icon "arrow-down", class: "content-title"%>
             <%= icon "arrow-down", class: "content-title"%>
@@ -83,7 +85,7 @@
 <!--===================================================================================================================================================-->    
     <section>
         <header class="header-center">
-            <h2 class="content-title">MY PROJECTS
+            <h2 class="content-title projects">MY PROJECTS
             <%= link_to "ADD", new_project_path, class:"btn btn-danger"%>
             </h2>
             <%= icon "arrow-down", class: "content-title"%>
@@ -94,5 +96,17 @@
             <%= render @projects %>
         </article>
         
+    </section>
+<!--===================================================================================================================================================-->
+<!--                                                                CONTACTS                                                                        -->
+<!--===================================================================================================================================================--> 
+    <section>
+        <header class="header-center">
+            <h2 class="content-title contact">CONTACT ME</h2>
+            <%= icon "arrow-down", class: "content-title"%>
+            <%= icon "arrow-down", class: "content-title"%>
+            <%= icon "arrow-down", class: "content-title"%>
+        </header>
+        <p>If you like my work or want to chat, e-mail me at: <span class="header-text-color">caio.nevesleite@gmail.com</span></p>
     </section>
 </section>

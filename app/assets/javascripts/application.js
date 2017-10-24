@@ -19,4 +19,27 @@ $(document).on("turbolinks:load", function(){
    $("input[type='file']").on("change", function(){
        $(".inputlabel > label").text($(this).val().split("\\").pop()); 
    }); 
+   
+
+   $(".sidebar-content").animate({width: "toggle"}, 270)
+   $(".options-toggle").on("click", function(){
+      $(".sidebar-content").animate({width: "toggle"}, 270)
+   });
+   
+   $(".style-toggler").on("click", function(){
+      $(this).toggleClass("toggler-btn-light");
+      $(".content").toggleClass("light-theme");
+   });
+   
+   scrollTo( $("#home"), $(".home"));
+   scrollTo( $("#about"), $(".about"));
+   scrollTo( $("#work"), $(".work"));
+   scrollTo( $("#projects"), $(".projects"));
+   scrollTo( $("#contact"), $(".contact"));
 });
+
+function scrollTo(id, element){
+   id.on("click", function() {
+      $("html, body").animate({ scrollTop: element.first().offset().top }, 500);
+   }); 
+};

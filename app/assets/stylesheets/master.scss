@@ -1,13 +1,23 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "bootstrap";
+@import 'bootstrap/glyphicons';
 *{
     color: white;
     text-align: center;
+    box-sizing: border-box;
 }
 
-body{
+.light-theme{
+    background: white;
+    p,h2,i{
+        color: black;
+    }
+}
+
+html,body{
     background: #00061a;
+    height: 100%;
 }
 
 .inputlabel{

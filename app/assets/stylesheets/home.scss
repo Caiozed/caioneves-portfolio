@@ -10,6 +10,10 @@
     text-align: left;
 }
 
+#heart{
+    color: red;    
+}
+
 .title{
     width: 100%;
     height: 250px;
@@ -35,6 +39,7 @@
 }
 
 .content{
+    transition: all 1s;
     *{
         padding: 10px 0;
     }
@@ -49,6 +54,46 @@
     
 }
 
+.sidebar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 11;
+    height: 100%;
+    h3{
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    p{
+        font-size: 13px;
+        margin-top: 30px;
+        text-align: left;
+        letter-spacing: 0.1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        &:hover{
+            color: #ff704d;
+        }
+    }
+    .options-toggle{
+        position: absolute;
+        left: -65px;
+        font-size: 25px;
+        top: 15px;
+        cursor: pointer;
+        padding: 10px;
+        background: #191919;
+        border-radius: 5px;
+    }
+    
+    .sidebar-content{
+        padding: 20px;
+        background: #191919;  
+        height: 100%;
+    }
+}
+
 .info{
     width: 50%;
     margin: 0 auto;
@@ -58,6 +103,7 @@
     color: #ff704d;
 }
 .content-title{
+    letter-spacing: 0.1em;
     font-size: 30px;
     font-weight: 900;
 }
@@ -113,4 +159,43 @@
     }
 }
 
+.contacts{
+    i{
+        padding: 0;
+        border-radius: 50%;
+        transition: all .5s;
+        &:hover{
+            color: #ff704d;
+        }
+    }
+}
+
+
+.style-toggler{
+    margin: 5px auto;
+    width: 70%;
+    height: 15px;
+    border-radius: 2px;
+    padding: 1px;
+    background: white;
+    z-index: 11;
+    transition: all 1s;
+    span{
+        display: block;
+        left: 0;
+        border-radius: 2px;
+        height: 100%;
+        width: 50%;
+        transition: all .5s;
+        background: black;
+    }
+}
+
+.toggler-btn-light{
+    background: black;
+    span{
+        background: white;
+        margin-left: 50%;
+    }
+}
 
