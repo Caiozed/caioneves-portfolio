@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  before_action :is_user_signed?
   def new
     @project = Project.new
   end
@@ -34,5 +35,9 @@ class ProjectsController < ApplicationController
   private
   def project_params
     params.require(:project).permit(:name, :description, :image, :git_url, :demo_url)  
+  end
+  
+  def is_user_signed?
+     redirect_to root_path unless is_signed?
   end
 end

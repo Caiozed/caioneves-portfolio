@@ -40,9 +40,10 @@
 
 .content{
     transition: all 1s;
-    *{
+    p, h3, h2, i{
         padding: 10px 0;
     }
+    
     h3{
         font-size: 25px;
         font-weight: 900;
@@ -66,7 +67,6 @@
     }
     p{
         font-size: 13px;
-        margin-top: 30px;
         text-align: left;
         letter-spacing: 0.1em;
         overflow: hidden;
@@ -103,6 +103,7 @@
     color: #ff704d;
 }
 .content-title{
+    color: white;
     letter-spacing: 0.1em;
     font-size: 30px;
     font-weight: 900;
@@ -113,7 +114,7 @@
      display: inline;
 }
 
-.project-list{
+.list{
     border-top: 5px solid rgba(120, 120, 120, 0.4);
     border-bottom: 5px solid rgba(120, 120, 120, 0.4);
     border-radius: 10px;
@@ -121,11 +122,14 @@
     margin: 0 auto;
     text-align: center;
     position: relative;
+    padding: 10px 0;
 }
 
 .project{
+    padding: 10px 0;
     width: 400px;
     display: inline-block;
+    margin: 0 5px;
     vertical-align: top;
     p{
         text-align: left;
@@ -147,6 +151,18 @@
     }
 }
 
+.job{
+    padding: 10px 30px;
+    width: 100%;
+    *{
+        text-align: left;
+    }
+    .dates{
+        padding: 0;
+        float: right;
+    }
+}
+
 .footer{
     background: #001121;
     padding: 10px;
@@ -160,6 +176,7 @@
 }
 
 .contacts{
+    margin-top: 10px;
     i{
         padding: 0;
         border-radius: 50%;

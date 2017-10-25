@@ -1,0 +1,12 @@
+<div class="job">
+    <h2 class="content-title"><span class="header-text-color"><%= job.name %></span>
+        <%if is_signed? %>
+            <%= link_to "Edit", edit_job_path(job), class: "btn btn-info"%>
+            <%= link_to "Delete", job_path(job), class: "btn btn-info", method: :delete, data: {confirm: "Are you sure?"}%>
+        <%end%>
+        <p class="dates"><span class="dates header-text-color">
+            <%= job.start_date.strftime("%d/%b/%Y") %> - <%= job.end_date.strftime("%d/%b/%Y") %>
+        </span></p>
+    </h2>
+    <p><%= job.description %></p>
+</div>

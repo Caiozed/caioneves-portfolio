@@ -21,7 +21,7 @@ $(document).on("turbolinks:load", function(){
    }); 
    
 
-   $(".sidebar-content").animate({width: "toggle"}, 270)
+   $(".sidebar-content").animate({width: "toggle"}, 0)
    $(".options-toggle").on("click", function(){
       $(".sidebar-content").animate({width: "toggle"}, 270)
    });
@@ -39,7 +39,9 @@ $(document).on("turbolinks:load", function(){
 });
 
 function scrollTo(id, element){
-   id.on("click", function() {
-      $("html, body").animate({ scrollTop: element.first().offset().top }, 500);
-   }); 
+   if(id && element){
+      id.on("click", function() {
+         $("html, body").animate({ scrollTop: element.first().offset().top }, 500);
+      });
+   }
 };

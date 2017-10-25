@@ -74,11 +74,18 @@
 <!--===================================================================================================================================================-->
     <section>
         <header class="header-center">
-            <h2 class="content-title work">MY WORKING EXPERIENCES</h2>
+            <h2 class="content-title work">MY WORKING EXPERIENCES
+            <%if is_signed? %>
+                <%= link_to "ADD", new_job_path, class:"btn btn-danger"%>
+            <%end%>
+            </h2>
             <%= icon "arrow-down", class: "content-title"%>
             <%= icon "arrow-down", class: "content-title"%>
             <%= icon "arrow-down", class: "content-title"%>
         </header>
+        <article class="list">
+            <%= render @jobs %>
+        </article>
     </section>
 <!--===================================================================================================================================================-->
 <!--                                                                MY PROJECTS                                                                        -->
@@ -86,13 +93,15 @@
     <section>
         <header class="header-center">
             <h2 class="content-title projects">MY PROJECTS
-            <%= link_to "ADD", new_project_path, class:"btn btn-danger"%>
+            <%if is_signed? %>
+                <%= link_to "ADD", new_project_path, class:"btn btn-danger"%>
+            <%end%>
             </h2>
             <%= icon "arrow-down", class: "content-title"%>
             <%= icon "arrow-down", class: "content-title"%>
             <%= icon "arrow-down", class: "content-title"%>
         </header>
-        <article class="project-list">
+        <article class="list">
             <%= render @projects %>
         </article>
         

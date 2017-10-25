@@ -1,7 +1,11 @@
 <div class="sidebar">
     <i class="fa fa-reorder options-toggle"></i>
     <div class="sidebar-content">
-        <h3 class="content-title header-text-color">Caio Neves</h3>
+        <h3 class="content-title"><span class="header-text-color">Caio Neves</span> 
+            <%if is_signed? %>
+                <%= link_to "Sign out", sign_out_path, method: :delete %>
+            <%end%>
+        </h3>
         <p id="home">HOME</p>
         <p id="about">ABOUT</p>
         <p id="work">WORKING EXPERIENCES</p>
