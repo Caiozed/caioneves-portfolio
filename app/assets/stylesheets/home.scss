@@ -48,25 +48,16 @@
         font-size: 25px;
         font-weight: 900;
     }
-    p{
-        font-size: 20px;
-        line-height: 25px;   
-    }
-    
 }
 
 .sidebar{
     position: fixed;
-    right: 0;
-    top: 0;
     z-index: 11;
-    height: 100%;
     h3{
         overflow: hidden;
         white-space: nowrap;
     }
     p{
-        font-size: 13px;
         text-align: left;
         letter-spacing: 0.1em;
         overflow: hidden;
@@ -78,9 +69,6 @@
     }
     .options-toggle{
         position: absolute;
-        left: -65px;
-        font-size: 25px;
-        top: 15px;
         cursor: pointer;
         padding: 10px;
         background: #191919;
@@ -94,8 +82,112 @@
     }
 }
 
+
+/*Mobile styles*/
+@media screen and (max-width: 999px) and (min-width: 200px){
+   .content{
+        p{
+            font-size: 30px;
+            line-height: 35px;   
+        }
+   }
+   
+    .info{
+        width: 90%;   
+    }
+    
+    .job{
+        .dates{
+            padding: 0;
+            font-size: 20px;
+        }
+    }
+    
+    .sidebar{
+            width: 100%;
+            top: 0;
+        p{
+            text-align: center;
+            font-size: 25px; 
+        }
+        .options-toggle{
+            font-size: 35px;
+            top: 15px;
+            right: 4%;
+        }
+    }
+    
+    .style-toggler{
+         height: 45px;
+    }
+    
+    .project{
+        width: 100%;
+        h2{
+           font-size: 40px; 
+        }
+        a{
+            font-size: 40px;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+
+//Desktop styles
+@media screen and (min-width: 1000px){
+  .content{
+        p{
+            font-size: 20px;
+            line-height: 25px;   
+        }
+  }
+   
+  .info{
+        width: 70%;   
+    }
+    
+     .job{
+        .dates{   
+            padding: 0;
+            font-size: 30px;
+        }
+    }
+    
+    .sidebar{
+        height: 100%;
+        right: 0;
+        top: 0;
+        p{
+           font-size: 13px; 
+        }
+        .options-toggle{
+            font-size: 35px;
+            left: -65px;
+            top: 15px;
+        }
+    }
+    
+    .style-toggler{
+         height: 15px;
+    }
+    
+    .project{
+        width: 25%;
+        h2{
+           font-size: 30px; 
+        }
+        a{
+            font-size: 20px;
+        }
+        p{
+            text-align: left;
+        }
+    }
+}
+
 .info{
-    width: 50%;
     margin: 0 auto;
 }
 
@@ -127,18 +219,14 @@
 
 .project{
     padding: 10px 0;
-    width: 400px;
     display: inline-block;
     margin: 0 5px;
     vertical-align: top;
-    p{
-        text-align: left;
-    }
     .image-link{
         padding: 0;
         img{
             padding: 0;
-            width: 300px;
+            width: 90%;
             transition: all 1s;
             &:hover{
             -webkit-filter: grayscale(100%);
@@ -191,7 +279,6 @@
 .style-toggler{
     margin: 5px auto;
     width: 70%;
-    height: 15px;
     border-radius: 2px;
     padding: 1px;
     background: white;
