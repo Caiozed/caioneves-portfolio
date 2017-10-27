@@ -84,7 +84,12 @@
             <%= icon "arrow-down", class: "content-title"%>
         </header>
         <article class="list">
-            <%= render @jobs %>
+            <div id="job-list">
+                <%= render @jobs %>
+            </div>
+            <div id="paginator-j">
+                <%= paginate @jobs, remote: true%>
+            </div>
         </article>
     </section>
 <!--===================================================================================================================================================-->
@@ -102,7 +107,12 @@
             <%= icon "arrow-down", class: "content-title"%>
         </header>
         <article class="list">
-            <%= render @projects %>
+            <div id="project-list">
+                <%= render @projects %>
+            </div>
+            <div id="paginator-p">
+                <%= paginate @projects, remote: true%>
+            </div>
         </article>
         
     </section>

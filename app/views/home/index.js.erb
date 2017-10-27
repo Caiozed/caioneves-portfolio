@@ -1,0 +1,5 @@
+$("#project-list").html('<%=j render(@projects) %>');
+$("#paginator-p").html('<%=j (paginate(@projects, :remote => true)) %>');
+
+$("#job-list").html('<%=j render(@jobs) %>');
+$("#paginator-j").html('<%=j (paginate(@jobs, :remote => true)) %>');

@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+20.times do
+    name = Faker::Name.name
+    description = Faker::FamilyGuy.quote
+    image = File.open(File.join(Rails.root, "/app/assets/images/unity-icon.svg"))
+    project = Project.new(name: name, description: description, image: image, git_url: "nothing", demo_url: "nothing")
+    project.save!
+end

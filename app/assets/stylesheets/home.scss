@@ -303,3 +303,18 @@
     }
 }
 
+.pagination{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px;
+    a{
+        background: #190130;
+        text-decoration: none;
+        padding: 5px 10px;
+        &:hover{
+            border: 2px solid #001b47;
+        }
+    }
+}
+

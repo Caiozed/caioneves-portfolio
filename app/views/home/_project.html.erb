@@ -1,0 +1,15 @@
+<div class="project" >
+    <h2 class="content-title"><span class="header-text-color">
+        <%= project.name %>
+        <%if is_signed? %>
+            <%= link_to "Edit", edit_project_path(project), class:"btn btn-info" %>
+            <%= link_to "Delete", project_path(project), class:"btn btn-info", method: :delete, data: {confirm: "Are you sure?"} %></span>
+        <%end%>
+    </h2>
+    <%= link_to "Live Demo", href: project.demo_url, target: "_blank", class: "image-link" do %> 
+        <%= image_tag project.image.url, title: project.name %>
+    <%end%>
+    <p><%= project.description %></p>
+    <%= link_to "Git", project.git_url, class: "btn btn-danger", target: "_blank" %>
+    <%= link_to "Live Demo", project.demo_url, class: "btn btn-danger", target: "_blank" %> 
+</div>
