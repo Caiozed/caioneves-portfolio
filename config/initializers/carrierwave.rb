@@ -6,6 +6,6 @@ config.fog_credentials = {
     :google_storage_secret_access_key => Rails.application.secrets.google_storage_secret_access_key
 
     }
-
+    
     config.fog_directory = 'portfolio-images'
 end
