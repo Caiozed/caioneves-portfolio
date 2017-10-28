@@ -6,8 +6,11 @@ class SessionsController < ApplicationController
     admin = Admin.find_by(session_params)
     unless admin.nil?
       cookies.signed[:admin_id] = admin.id
+      redirect_to root_path
+    else
+        render :new
     end
-    redirect_to root_path
+    
   end
 
   def destroy

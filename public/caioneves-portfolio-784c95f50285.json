@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "caioneves-portifolio",
+  "private_key_id": "784c95f5028567e047048e9930cf7636e18df497",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDJpdv1/1Jg9DP/\n5LNrf6nxO/YQpj0DXmOeMoSOdIFoRyBQ+XbgItSfs+J4C59ADpgOE3y645crnRr4\nxiMO1oV2hIw55FNDEg3ln3BOz4KAiHfhi5YfLRdYdKceW61x+4dzb5neq4WkYVE1\nn/z9CKvoHOaZ5iNQtuuCsIh3HDO93dsHysNb8yKoAZ5V0uKWu2EYN5CKpwby9Ncq\n6ylg5ZLkF6succYSPCyG2FKb3uY7AZ2ysWZx8a1d8LaexJ3DTZeUbY3WLqwd7zps\naD/whLhe3D1vI+E8hZl8/eu46O9+ChYaddBH8L0fmxyeT9EPZb3moY1KZr/wkSKv\nCKkqYCC9AgMBAAECggEAQk5lq9hPEE58otJjJSAPk6Fx4junqGnrO+PErsskmlN5\nDudY7Y7Gd9VAzNSVgwzJdyd1Rkb8OH0ql08fzAtCS5x+N7Mapd1T8IOi/GdDtFwr\nf2DU9l9vY8jIAzWGLQrWmWDDKfMguNK/T3DSUan+TQ7jzQtd5XagrpK57OC7Kt0o\n82xeKTRo7xghYbVLwQr5P4GevDnRHebcmTgQQh/zZIVdgD0wC0vq1cuQFBF4/e0d\nKl7zRSrakbjZHeOX9fzTlQ6G5qrw7gEiyj/dF2j/ybfxUNrwFjZaEcvqjYMuStAo\niEiN9fZuAfhj5QMBn8cWXALPngfiEpbi/tAfUqvYCQKBgQD2g8DS7HvV6mIJP+o8\n/fOykQB+ZBcL3SuCEpjrXkXaqzI3YXnNZY3szZHXqwaXaN05QYiogjz3J5Pf9M5e\nxr0coR/gqb410FiycpOV3JIACsL3VIjeTbC+G7AuO5+r+k5UsqVDQrL2KEYEIfsK\nOC025sfl2Ar7dOxN4vyKp9c7hwKBgQDRaCd56IiYLjQFZRambKCwtVIIvngQR/0k\n6VGVTCeT3adk9Mewujk8WnkuzG2eZVmNJZTTFIfJhXZYbNiY0r1dlgaFB+yPADqZ\nbA4GlESN9U4BgMnmYpQiiR+YvdFnRYEIIUMcxzn55mlW9FNeDja4VUvd2BlibNrE\nt0rvgXm6mwKBgCahUvA6utU025QTfgN80FmlO2yTBsGHMTA69de8eDniJgZjshCr\n32fCdx5S4L+NYU19pYqyjhc1DolD9asIfc4kubgdIX+RXLTqG5KadA6poQ/dIW2k\nwxOnhx5XnZf3q5q+PAOkSiMlAIPZR1u8nelClQTBrEbndbhm36hi0Om1AoGBAJuR\n9UHsLw5fxOX9I8agDQE6s6crWac+1CIH9EQmP4DquuGVuITi1IKx9DWASi/Su6TQ\ntq/aIMbmD/XBZ2ihp21Pd6h9KpFSajZwwDrDC+sqwrj7JQOzWLoPhRnEaz19tU6E\n54cJu1ichMXE3eqSRLTNKX+2e6VTmXNreJBWcEjhAoGBAOzdQe3Gz3M7v3deL+a1\n+NK0FKdoaoD5udjcgwlccWa/CF63aPtJ+u0Y8WRngez27cXhz0orx9Je4BQ3Axc0\nbjngN0N7SDrWto6/ZRexpvwH9UXISwByVQwN/wYDgRhyrs+Nckgnfe3D4hkTB3nA\nKCOMqiEjWKfMUeirIOZi64ke\n-----END PRIVATE KEY-----\n",
+  "client_email": "caioneves-portfolio-key@caioneves-portifolio.iam.gserviceaccount.com",
+  "client_id": "100395872801502820826",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/caioneves-portfolio-key%40caioneves-portifolio.iam.gserviceaccount.com"
+}
