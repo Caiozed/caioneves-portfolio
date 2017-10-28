@@ -4,6 +4,11 @@ $(document).on("turbolinks:load", function(){
        $(".inputlabel > label").text($(this).val().split("\\").pop()); 
    }); 
    
+   //Stops app from sleep mode
+   setInterval(function() {
+    $.get("https://lit-sea-70393.herokuapp.com/");
+   }, 300000); 
+   
    //Scree size update for responsive design
    $(window).resize(function(){
       screenSize = $("html").width();
@@ -21,7 +26,7 @@ $(document).on("turbolinks:load", function(){
          $(".sidebar-content").animate({height: "toggle"}, 270)
       });
    }
-   
+
    $(".style-toggler").on("click", function(){
       $(this).toggleClass("toggler-btn-light");
       $(".content").toggleClass("light-theme");
