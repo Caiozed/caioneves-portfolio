@@ -40,6 +40,10 @@
 
 .content{
     transition: all 1s;
+    p{
+        margin: 0;
+    }
+    
     p, h3, h2, i{
         padding: 10px 0;
     }
@@ -57,6 +61,7 @@
         overflow: hidden;
         white-space: nowrap;
     }
+    
     p{
         text-align: left;
         letter-spacing: 0.1em;
@@ -67,6 +72,7 @@
             color: #ff704d;
         }
     }
+    
     .options-toggle{
         position: absolute;
         cursor: pointer;
@@ -79,6 +85,9 @@
         padding: 20px;
         background: #191919;  
         height: 100%;
+    }
+    :last-child{
+        text-align: center;
     }
 }
 
@@ -274,6 +283,7 @@
         }
     }
 }
+
 
 
 .style-toggler{
