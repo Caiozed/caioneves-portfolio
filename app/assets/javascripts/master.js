@@ -6,8 +6,10 @@ $(document).on("turbolinks:load", function(){
    
    //Stops app from sleep mode
    setInterval(function() {
-    $.get("https://lit-sea-70393.herokuapp.com/");
-   }, 300000); 
+    $.get("https://caioneves-portfolio.herokuapp.com/", function(data){
+       console.log (data);
+    });
+   }, 30/*0000*/); 
    
    //Scree size update for responsive design
    $(window).resize(function(){
