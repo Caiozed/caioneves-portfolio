@@ -24,6 +24,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'carrierwave'
 gem 'rmagick'
 gem 'mini_magick'
+gem 'fog'
 gem 'font-awesome-sass'
 gem 'bootstrap'
 gem 'bootstrap-glyphicons'
